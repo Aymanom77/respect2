@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylee.css">
+  <title>Panier</title>
+</head>
+<body>
+
+  <div id="cart">
+    <div class="item">
+      <span class="item-name">Article 1</span>
+      <button class="quantity-btn" onclick="updateQuantity(1, 'increase')">+</button>
+      <span class="quantity">1</span>
+      <button class="quantity-btn" onclick="updateQuantity(1, 'decrease')">-</button>
+      <button class="remove-btn" onclick="removeItem(1)">Supprimer</button>
+      <button class="like-btn" onclick="toggleLike(1)">❤️</button>
+      <span class="price">10€</span>
+    </div>
+
+    <div class="item">
+      <span class="item-name">Article 2</span>
+      <button class="quantity-btn" onclick="updateQuantity(2, 'increase')">+</button>
+      <span class="quantity">2</span>
+      <button class="quantity-btn" onclick="updateQuantity(2, 'decrease')">-</button>
+      <button class="remove-btn" onclick="removeItem(2)">Supprimer</button>
+      <button class="like-btn" onclick="toggleLike(2)">❤️</button>
+      <span class="price">20€</span>
+    </div>
+
+    <div id="total-price">Prix total : 30€</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
